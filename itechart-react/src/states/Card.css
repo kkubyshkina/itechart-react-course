@@ -1,0 +1,29 @@
+.card-header {
+  font-size: 16px;
+  color: #700909;
+  text-align: center;
+  font-family: serif;
+  border: 2px solid rgb(13, 13, 14);
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  width: 280px;
+  height: 30px;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em rgba(161, 71, 71, 0.918);
+}
+
+.card {
+  font-size: 10px;
+  font-family: serif;
+  color: #9c0c0cee;
+  background-color: #dfa5a534;
+  border: 5px solid #700909;
+  margin-top: 60px;
+  width: 300px;
+  height: 250px;
+  padding-left: 30px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 15px rgba(170, 69, 69, 0.918);
+  border-radius: 10px;
+}
