@@ -1,38 +1,21 @@
 import "./App.css";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Card from "./states/Card";
 function App() {
+  const [title, setTitle] = useState("Caption");
+  const [text, setText] = useState(
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
+  tempor incididunt ut labore et dolore magna aliqua"
+  );
+
   return (
     <div>
-      <div className="header">
-        <h1> itechart-react-course </h1>
-      </div>
+      <Header />
       <div className="position">
-        <div className="card">
-          <div className="card-header">
-            <h1> Caption </h1>
-          </div>
-          <h1>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h1>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1> Caption </h1>
-          </div>
-          <h1>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h1>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1> Caption </h1>
-          </div>
-          <h1>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h1>
-        </div>
+        <Card title={title} text={text} />
+        <Card title={title} text={text} />
+        <Card title={title} text={text} />
       </div>
     </div>
   );
